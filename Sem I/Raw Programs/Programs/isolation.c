@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 #include<math.h>
-main()
+int main()
 {
     int add,rem,rad;
     int n;
