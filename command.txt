@@ -1,6 +1,7 @@
 gh repo create C-Basic-Assignments --public
 
 gh repo clone bijanr/C-Basic-Assignments
+// adds the repository to local folder
 
 git add
 git status
