@@ -1,0 +1,39 @@
+join - cartesian product followed by selection
+natural join - cartesian product followed by selection with equality between common attributes, removing the duplicate columns.
+
+Q1.
+select stu_ID as ID, name, dept_name, tot_credit, course-id, sec_id, semester, year, grade
+from student, takes
+where student.Id = takes.Id;
+Q2.
+select *
+from student natural join takes;
+
+here Q1 and Q2 are the same.
+
+Q3.
+select *
+from student join takes on student.ID = takes.ID
+
+Q3 is an example of natural join based on given attributes.
+
+outer join is used when one id is present but the other one isnt. suppose in student id and takes id. if any attribute from student id missing then it becomes null by default
+use left and right outer join. 
+Q4.
+"where course.ID is null" 
+
+select *
+from student inner join takes using(ID)
+
+
+VIEWS- makes a virtual table where access is restricted.
+create view v as <query expressions>
+
+create view faculty as 
+select ID, name, dept_name
+from instructor,
+
+
+select *
+from faculty;
+
